@@ -138,6 +138,7 @@ ul{
     font-weight: 700;
     text-transform: capitalize;
     text-align: center;
+    margin: 0;
 }
 .section-title h2 span{
     color: var(--main-color);
@@ -445,4 +446,66 @@ features */
     font-weight: 300;
     color: var(--black-400);
     margin: 0 0 15px;
+}
+/* 
+facts */
+
+.fun-facts{
+    background-color: var(--black-100);
+}
+
+.fun-facts .section-title{
+    text-align: left;
+}
+
+.fun-facts-img img{
+    max-width: 250px;
+    width: 100%;
+    box-shadow: var(--shadow-black-100);
+    border-radius: 32px;
+    animation: bounceTop_01 3s ease infinite;
+
+}
+
+.fun-facts-text p{
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--black-400);
+    margin: 0 0 15px;
+    font-weight: 300;
+}
+.fun-facts-item{
+    padding: 40px 30px;
+    text-align: center;
+    box-shadow: var(--shadow-black-100);
+    border-radius: 10px;
+    margin-top: 30px;
+}
+.fun-facts-item h3{
+    font-size: 40px;
+    color: #ffffff;
+    font-weight: 700;
+    margin: 0 0 5px;
+}
+.fun-facts-item span{
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 300;
+    margin: 0;
+    line-height: 26px;
+    display: block;
+    color: #ffffff;
+}
+
+.fun-facts-item.style-1{
+    background-color: var(--color-1);
+}
+.fun-facts-item.style-2{
+    background-color: var(--color-2);
+}
+.fun-facts-item.style-3{
+    background-color: var(--color-3);
+}
+.fun-facts-item.style-4{
+    background-color: var(--main-color);
 }
