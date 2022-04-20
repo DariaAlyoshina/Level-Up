@@ -15,46 +15,51 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body">
+
+<!-- preloader -->
+<div class="preloader">
+  <span></span>
+</div>
 
 
-  <nav class="navbar fixed-top navbar-expand-md">
+  <nav class="navbar fixed-top navbar-expand-lg">
     <div class="container">
       <!-- Brand -->
       <a class="navbar-brand" href="index.html">Level Up</a>
 
       <!-- Toggler/collapsibe Button -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-        <span class="navbar-toggler-icon"></span>
+        <i class="fas fa-bars"></i>
       </button>
 
       <!-- Navbar links -->
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link active" href="#">Home</a>
+            <a class="nav-link active" data-scroll-nav="0" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
+            <a class="nav-link" data-scroll-nav="1" href="#">Features</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Screenshots</a>
+            <a class="nav-link" data-scroll-nav="2" href="#">Screenshots</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Testimonials</a>
+            <a class="nav-link" data-scroll-nav="3" href="#">Testimonials</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
+            <a class="nav-link" data-scroll-nav="4" href="#">Pricing</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" data-scroll-nav="5" href="#">Contact</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
   <!-- home section -->
-  <section class="home d-flex align-items-center">
+  <section class="home d-flex align-items-center" id="home" data-scroll-index="0">
     <div class="effect-wrap">
       <i class="fas fa-plus effect effect-1 "></i>
       <i class="fas fa-plus effect effect-2 "></i>
@@ -68,8 +73,8 @@
             <p>From this mobile App you can view class schedules, sign-up for classes, view ongoing promotions, as well
               as view the studio’s location and contact information.</p>
             <div class="home-btn">
-              <a href="#" class="btn btn-1">Download app</a>
-              <button type="button" class="btn btn-1 video-play-btn">
+              <a href="#" data-scroll-goto="3" class="btn btn-1">Download app</a>
+              <button type="button"  class="btn btn-1 video-play-btn">
                 <i class="fas fa-play"></i>
               </button>
             </div>
@@ -97,7 +102,7 @@
   </div>
 
   <!-- features section -->
-  <section class="features section-padding">
+  <section class="features section-padding" id="features" data-scroll-index="1">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-8">
@@ -183,7 +188,7 @@
   </section>
 
   <!-- app Screenshots section -->
-  <section class="app-screenshots section-padding">
+  <section class="app-screenshots section-padding" id="screenshots" data-scroll-index="2">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-8">
@@ -215,7 +220,7 @@
   </section>
 
   <!-- app download section -->
-  <section class="app-download section-padding">
+  <section class="app-download section-padding" data-scroll-index="3">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-8">
@@ -255,7 +260,7 @@
   </section>
 
   <!-- section how it works -->
-  <section class="how-it-works section-padding">
+  <section class="how-it-works section-padding" id="testimonials">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-8">
@@ -269,7 +274,7 @@
           <div class="how-it-works-item line-right">
             <div class="step">1</div>
             <h3>download</h3>
-            <p> Daily will track this time for you and display it in the app.</p>
+            <p> Daily will track this time for you and display it in the app Template for your Business.</p>
           </div>
         </div>
         <div class="col-lg-3 col-md-6">
@@ -300,7 +305,7 @@
   </section>
 
   <!-- pricing -->
-  <section class="pricing section-padding">
+  <section class="pricing section-padding" id="pricing" data-scroll-index="4">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-8">
@@ -309,7 +314,7 @@
           </div>
         </div>
       </div>
-      <div class="row">
+      <div class="row justify-content-center">
         <div class="col-lg-4 col-md-6">
           <div class="pricing-plan">
             <div class="pricing-header">
@@ -447,7 +452,7 @@
 
   <!-- contact -->
 
-  <section class="contact section-padding">
+  <section class="contact section-padding" id="contact" data-scroll-index="5">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-8">
@@ -551,11 +556,11 @@
           <div class="footer-col">
             <h3>Quick Links</h3>
             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Features</a></li>
-              <li><a href="#">Screenshots</a></li>
-              <li><a href="#">Pricing</a></li>
-              <li><a href="#">Testimonials</a></li>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#features">Features</a></li>
+              <li><a href="#screenshots">Screenshots</a></li>
+              <li><a href="#pricing">Pricing</a></li>
+              <li><a href="#testimonials">Testimonials</a></li>
             </ul>
           </div>
         </div>
@@ -578,6 +583,12 @@
       </div>
     </div>
   </footer>
+
+  <!-- toggler theme -->
+
+  <div class="toggle-theme">
+    <i class="fas"></i>
+  </div>
 
 
 
